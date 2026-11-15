@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>FindIt - Lost and Found</title>
+
+    <link rel="stylesheet" th:href="@{/style.css}">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body class="home-page">
+
+<main class="home-container">
+
+    <a href="/report-lost" class="main-button">
+        <i class="fa-solid fa-triangle-exclamation"></i>
+        Report Lost Item
+    </a>
+
+    <a href="/report-found" class="main-button">
+        <i class="fa-solid fa-circle-check"></i>
+        Report Found Item
+    </a>
+
+    <a href="/reported-items" class="main-button">
+        <i class="fa-solid fa-list-ul"></i>
+        Reported Items So Far
+    </a>
+
+</main>
+
+</body>
+</html>

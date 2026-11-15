@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Report Found Item - FindIt</title>
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="logo">
+        <span class="search-icon">⌕</span>
+        <h1>FindIt</h1>
+    </div>
+
+    <h2>Lost and Found Management System</h2>
+
+</header>
+
+<div class="container">
+
+    <a href="/" class="back-button">← Back to Home</a>
+
+    <h2 class="form-title">Report a Found Item</h2>
+
+    <form action="/submit-item" method="post">
+
+        <input type="hidden" name="type" value="FOUND">
+
+        <label>Item Name:</label>
+        <input type="text" name="itemName" placeholder="Enter item name" required>
+
+        <label>Description:</label>
+        <textarea name="description" placeholder="Describe the found item" required></textarea>
+
+        <label>Found Location:</label>
+        <input type="text" name="location" placeholder="Where did you find it?" required>
+
+        <label>Date Found:</label>
+        <input type="date" name="date" required>
+
+        <label>Your Name:</label>
+        <input type="text" name="reporterName" placeholder="Enter your name" required>
+
+        <label>Email:</label>
+        <input type="email" name="email" placeholder="Enter your email" required>
+
+        <button type="submit">Submit Found Item</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
